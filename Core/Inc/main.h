@@ -31,7 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -63,8 +63,8 @@ void Error_Handler(void);
 #define KEY2_GPIO_Port GPIOC
 #define KEY3_Pin GPIO_PIN_2
 #define KEY3_GPIO_Port GPIOC
-#define WS2182B_Pin GPIO_PIN_13
-#define WS2182B_GPIO_Port GPIOB
+#define WS2812B_Pin GPIO_PIN_13
+#define WS2812B_GPIO_Port GPIOB
 #define DS_RST_Pin GPIO_PIN_14
 #define DS_RST_GPIO_Port GPIOB
 #define DS_IO_Pin GPIO_PIN_15

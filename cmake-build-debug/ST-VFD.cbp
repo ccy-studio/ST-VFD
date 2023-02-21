@@ -28,6 +28,7 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32G070xx"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Core/Inc"/>
+					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Core/User/Inc"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Drivers/STM32G0xx_HAL_Driver/Inc"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Drivers/STM32G0xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Drivers/CMSIS/Device/ST/STM32G0xx/Include"/>
@@ -57,6 +58,7 @@
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32G070xx"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Core/Inc"/>
+					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Core/User/Inc"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Drivers/STM32G0xx_HAL_Driver/Inc"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Drivers/STM32G0xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="D:/MyTempProjects/STM32/ST-VFD/Drivers/CMSIS/Device/ST/STM32G0xx/Include"/>
@@ -96,6 +98,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Inc/dma.h">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Inc/gpio.h">
 			<Option target="ST-VFD.elf"/>
 		</Unit>
@@ -108,7 +113,13 @@
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Inc/stm32g0xx_it.h">
 			<Option target="ST-VFD.elf"/>
 		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Inc/tim.h">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Inc/usart.h">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Src/dma.c">
 			<Option target="ST-VFD.elf"/>
 		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Src/gpio.c">
@@ -132,10 +143,31 @@
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Src/system_stm32g0xx.c">
 			<Option target="ST-VFD.elf"/>
 		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Src/tim.c">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Src/usart.c">
 			<Option target="ST-VFD.elf"/>
 		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/Startup/startup_stm32g070rbtx.s">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/User/Inc/esp07s.h">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/User/Inc/index.h">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/User/Inc/ws2812b.h">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/User/Src/esp07s.c">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/User/Src/index.c">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Core/User/Src/ws2812b.c">
 			<Option target="ST-VFD.elf"/>
 		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g070xx.h">
@@ -310,6 +342,9 @@
 			<Option target="ST-VFD.elf"/>
 		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_system.h">
+			<Option target="ST-VFD.elf"/>
+		</Unit>
+		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_tim.h">
 			<Option target="ST-VFD.elf"/>
 		</Unit>
 		<Unit filename="D:/MyTempProjects/STM32/ST-VFD/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_ll_usart.h">
