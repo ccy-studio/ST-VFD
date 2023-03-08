@@ -28,7 +28,7 @@
 /**
  * 显示灯光的开关
  */
-#define DISPLAY_OFF 0x71 //关
+#define DISPLAY_OFF 0x70 //关
 #define DISPLAY_ON 0x73 //开
 
 /**
@@ -56,7 +56,7 @@
         7.段输出：所有段输出设置为“低”。
         8.AD输出：所有AD输出设置为“低”
  */
-void VFD_REST();
+void VFD_Init();
 
 /**
  * 清空
@@ -87,5 +87,6 @@ void VFD_SetGeneralPinState(uint8_t value);
  * @param character
  */
 void VFD_SetCharacter(uint8_t index,char character);
+void VFD_SetString(uint8_t index,char* str);
 
 #endif //ST_VFD_VFD_DISPLAY_H
